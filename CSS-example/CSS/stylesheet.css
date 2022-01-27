@@ -1,0 +1,17 @@
+img {
+    width: 100%;
+}
+
+/*1fr stands for fraction, which means three columns all the same width*/
+/*1fr 2fr 1fr - the "2" would make the middle column twice as long*/
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 10px;
+}
+
+.gallery-item {
+    border: solid 1px red;
+}
+
