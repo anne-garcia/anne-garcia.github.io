@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+    <title>JavaScript Arrays and Objects Exercise</title>
+</head>
+<body>
+<script>
+var linkArray = new Array();
+linkArray[0] = "W3Schools";
+linkArray[1] = "https://www.w3schools.com/images/w3schools.png";
+linkArray[2] = "https://www.w3schools.com/";
+linkArray[3] = "W3Schools is a web developer information website, with tutorials and references relating to web development topics such as HTML, CSS, JavaScript and PHP.";
+
+document.write ( "<h1>" + linkArray[0] + "</h1>");
+document.write ( "<p>" + linkArray[3] + "</p>");
+document.write ( "<img src='" + linkArray[1] +"' />");
+document.write ( "<p><a href='" + linkArray[2] +"'>" + linkArray[0] +"</a></p>");
+
+var linkObject = new Object();
+linkObject.linkName = "Codecademy";
+linkObject.linkLogo = "https://images.codecademy.com/social/logo-codecademy-social.png";
+linkObject.linkURL = "https://www.codecademy.com/";
+linkObject.linkDescription = "Codecademy is an online interactive learning website dedicated to teaching people around the world different coding languages.";
+
+document.write( `<h1>${linkObject.linkName}</h1>` );
+document.write(`<p>${linkObject.linkDescription}</p>`);
+document.write(` <img src="${linkObject.linkLogo}"/>`);
+document.write(`<p><a href="${linkObject.linkURL}">${linkObject.linkName}</p>`)
+</script>
+</body>
+</html>
