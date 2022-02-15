@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Anne garcia</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper" >
+            <a class="logo"><span class="logo-highlight">ANNE</span>GARCIA</a>
+            <nav>
+                <p class="navbar-titles"><a class="navbar-links" href="#about">ABOUT</a></p>
+                <p class="navbar-titles"><a class="navbar-links" href="#gallery">GALLERY</a></p>
+                <p class="navbar-titles"><a class="navbar-links" href="#contact">CONTACT</a></p>
+            </nav>
+        </div>
+    </header> 
+    
+    <div class="hero-slider">
+        <img src="images/ellaBlanket.png" id="slider-first-image"/>
+    </div>
+
+    <main class="intro-text" id="about">
+        <h2 class="text-subheading" id="subheadingColorChange" onmouseover="mouseOver()" onmouseout="mouseOut()">Stumbling through Life.</h2>
+        <h3 class="text-para">Enjoy the stumble. Life is more interesting when the journey's off beat.</h3>
+    </main>
+
+    <div class="portfolio-gallery" id="gallery">
+        <div class="portfolio-item">
+            <img class="portfolio-image" src="images/anneHorse.png" alt="Anne with white horse.">
+            <h4 class="portfolio-title">Never a one trick pony!</h4>
+            <button class="portfolio-learn-more" onclick="ponyMessage()">Learn More</button>
+        </div>
+        <div class="portfolio-item">
+            <img class="portfolio-image" src="images/totoroHat.png" alt="Totoro animation holding a hat.">
+            <h4 class="portfolio-title">Totoro-ly in love with Studio Ghibli.</h4>
+            <button class="portfolio-learn-more" onclick="ghibliMessage()">Learn More</button>
+        </div>
+        <div class="portfolio-item">
+            <img class="portfolio-image" src="images/food.png" alt="Platter of ube waffles and korean fried chicken.">
+            <h4 class="portfolio-title">Waffles are just pancakes with abs.</h4>
+            <button class="portfolio-learn-more" onclick="waffleMessage()">Learn More</button>
+        </div>
+        </div>
+    </div>
+
+    <div class="section-get-in-touch" id="contact">
+        <h2 class="text-subheading">Get in Touch with <span class="text-subheading-bolded">Anne</span>.</h2>
+        <h3 class="text-para">Make meaninful connections.</h3>
+        <button class="email-us-button" onclick="emailMessage()">E-MAIL ME!</button>
+    </div>
+
+    <footer>
+        <h6>&copy;2022 Anne Garcia Inc.</h6>
+    </footer>
+</body>
+<script src="javascript/script.js"></script>
+</html>
