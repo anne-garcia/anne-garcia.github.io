@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>Random Recipe Researcher</title>
+</head>
+<body>
+    <header>
+        <div class="websiteTitle" >
+            <p>Random Recipe Researcher</p>
+        </div>
+
+        <div class="hideAnimationOffScreen">
+            <div class="animationMilkChasingCookie">
+                <img src="images/milkChasingCookie.gif" alt="Milk animation chasing a cookie.">
+            </div>
+        </div>
+    </header>
+
+            
+    <div class="buttonRow">
+        <button id="randomRecipeButton" onclick="onButtonPress()">GENERATE RECIPE</button>
+    </div>
+
+    <div class="recipeRow">
+        <iframe id="randomRecipeDisplay"></iframe>
+    </div>
+
+    <div class="moreInformationFormat">
+        <section id="moreInformationText" onmouseover="openText()" onmouseout="closeText()">
+            <h2>~ More Information ~</h2>
+            <p>The Random Recipe Researcher takes away the hassle of choosing your next meal.
+                It's a surprise every time, whether it's breakfast, lunch, dinner, or dessert there's a recipe for you.
+                Just click the button above and find out what you're eating next!
+            </p>
+        </section>
+    </div>
+
+    <footer>
+        <h6>&copy;2022 Random Recipe Researcher</h6>
+    </footer>
+</body>
+
+<script src="script.js"></script>
+
+</html>
