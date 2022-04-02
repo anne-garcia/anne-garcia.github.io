@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Karla', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.icon-cont {
+    display: none;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 2.5rem;
+}
+
+.nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #9E2A2B;
+}
+
+.nav-link:hover {
+    color: #540B0E;
+    padding-bottom: 5px;
+    border-bottom: 1.5px solid #540B0E;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #E09F3E;
+}
+
+@media screen and (max-width:420px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #Ffff;
+        width: 100%;
+        border-radius: 25px;
+        text-align: center;
+        transition: .75s;
+        box-shadow: 
+            0 20px 25px #335C67;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .icon-cont {
+        display: block;
+        cursor: pointer;
+    }
+}
