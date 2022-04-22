@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Weather App">
+    <meta name="keywords" content="weather, jquery, temperature, Toronto">
+    <meta name="author" content="Anne Garcia"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/stylesheet.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./css/normalize.css"/>
+    <script src="jquery-3.6.0.min.js"></script> 
+    <title>Assignment 4 - JavaScript, jQUery and APIs</title>
+</head>
+<body>
+    <header> 
+        <div class="hero-slider">
+            <img src="./images/sunny.jpg" id="sliderFirstImage">
+            <h1 class="hero-title">Daily Weather Forecast</h1>
+        </div>
+    </header>
+
+    <div class="app-container">
+        <h2 id="city">Toronto</h2>
+        <div class="weather-details">
+            <div id="weatherIcons" alt="Weather Icon"></div>
+            <div class="degrees">
+                <h1 id="temp"></h1>
+                <h2>Feels Like: <span id="feelsLike"></span></h2>
+                <h2>High: <span id="tempHigh"></span></h3>
+                <h2>Low: <span id="tempLow"></span></h3>
+                <h3 id="description"></h3>
+            </div>
+            <h3>Longitude: <span id="longitude"></span></h3>
+            <h3>Latitude: <span id="latitude"></span></h3>
+            <h3>Wind: <span id="wind"></span> km/hr</h3>
+        </div>
+    </div>
+
+    <footer><h6><b>&copy;2022 Tyring To Survive Finals Inc.</b></h6></footer>
+
+    <script type="text/javascript" src="./main.js"></script>
+</body>
+</html>
