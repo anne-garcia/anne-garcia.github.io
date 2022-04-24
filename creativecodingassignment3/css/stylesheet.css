@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Square+Peg&display=swap');
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin-bottom: 2em;
+    border-bottom: dotted 5px #70CACD;
+}
+
+h1 {
+    font-family: 'Square Peg', cursive;
+    font-size: 3.5em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h6 {
+    margin: 0;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+footer {
+    margin: 3.5em .5em .5em;
+}
+
+.websiteTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: 700;
+    color: #70CACD;
+    background-color: white;
+}
+
+.hideAnimationOffScreen {
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+}
+
+.flipDog {
+    transform: scaleX(-1);
+    max-width: 250;
+    padding: 1em;
+}
+
+.animationHotDog {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 150px;
+    overflow: hidden;
+    animation: animationMilkChasingCookie 7.5s infinite;
+    animation-timing-function: ease-in-out;   
+}
+
+@keyframes animationMilkChasingCookie {
+    0% {
+        transform: translate(-65vw,0);
+    }
+    100% {
+        transform: translate(65vw,0);
+    }
+}
+
+.instructions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+.dogAnimationInstructions {
+    max-width: 50px;
+}
+
+.playGame {
+    margin-bottom: 5em;
+}
+
+#canvas {
+    border: 2px solid black;
+    margin: 2em;
+    margin: auto;
+    display: block;
+    width: 1200px;
+    height: 650px;
+    background-color: #70CACD;
+}

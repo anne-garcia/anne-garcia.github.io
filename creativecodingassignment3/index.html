@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hot Dog Dash">
+    <meta name="author" content="Anne Garcia">
+    <meta name="keywords" content="hot dog, dash, game">
+    <link rel="stylesheet" href="./css/stylesheet.css"/>
+    <title>Hot Dog Dash</title>
+
+</head>
+<body>
+    <header>
+        <div class="websiteTitle" >
+            <h1>Hot Dog Dash</h1>
+        </div>
+
+        <div class="hideAnimationOffScreen">
+            <div class="animationHotDog">
+                <img class="flipDog" src="./images/runningHotDogCropped.gif" alt="Running Cartoon Hot Dog.">
+            </div>
+        </div>
+    </header>
+
+    <section class="instructions">
+        <h2>Instructions</h2>
+        <p>Click <span><img class="dogAnimationInstructions" src="./images/runningHotDogCropped.gif" alt="Running Cartoon Hot Dog." ></span> before it escapes! </p>
+    </section>
+
+    <canvas id="canvas" width="1200" height="650"></canvas>
+
+    <footer><h6>&#169;2022 Desperately Clinging to Reality Inc.</h6></footer>
+    
+    <script src="./scripts/clickableRect.js"></script>
+    <script src="./scripts/hotdog.js"></script>
+    <script src="./scripts/startButton.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
